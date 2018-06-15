@@ -1,0 +1,28 @@
+<html>
+ <head>
+   <title>reCAPTCHA</title>
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+   <script>
+       var onloadCallback = function() {
+           grecaptcha.render('captcha', {
+           'sitekey' : '6LeiZSYUAAAAAI3JZXrRnrsBzAdrZ40PmD57v_fs'
+           });
+       };
+       var insertInForm = function (token) {
+           $('form#gateway > input[name="token"]').val (token);
+           }
+    </script>
+ </head>
+ <body>
+ <h1>Fabse des is mei Seitn!!!!!! :D</h1>
+   <div id="captcha"></div>
+   
+   <form id="gateway" method="GET">
+       <input name="token" />
+   </form>
+   <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+       async defer>
+   </script>
+   </form>
+ </body>
+</html>
