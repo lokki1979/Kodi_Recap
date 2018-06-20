@@ -6,24 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        android:gravity="center" >
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
+        <ProgressBar
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView in here with the full link" />
-
-        <WebView
-            android:id="@+id/activity_main_webview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </LinearLayout>
+            android:indeterminate="true" />
+    </RelativeLayout>
 
 
 </android.support.constraint.ConstraintLayout>
